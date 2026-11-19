@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="pagina.css">
+</head>
+<body>
+
+  <main class="contenedor">
+
+    <section id="pantalla-inicio" class="pantalla">
+      <h1>Preguntas de manillas </h1>
+      <p class="descripcion">Prueba cuanto sabes en manillas de moztacilla.</p>
+
+      <ul class="detalles">
+        <!-- Los span vacíos se llenan desde el JS -->
+        <li>Son <span id="total-preguntas"></span> preguntas de opción múltiple.</li>
+        <li>Tienes <span id="tiempo-limite"></span> segundos para cada pregunta.</li>
+        <li>Respuesta correcta: +1 punto.</li>
+        <li>Si se acaba el tiempo: -1 punto y pasa a la siguiente pregunta.</li>
+      </ul>
+
+      <button id="boton-empezar" class="boton-principal">Empezar</button>
+    </section>
+
+    <!-- ========== PANTALLA 2: PREGUNTAS ========== -->
+    <section id="pantalla-quiz" class="pantalla oculto">
+
+      <div class="barra-superior">
+        <span id="texto-progreso"></span>
+        <span id="texto-puntaje"></span>
+        <span id="texto-tiempo"></span>
+      </div>
+
+      <!-- La pregunta se muestra como una tarjeta -->
+      <div class="tarjeta">
+        <h2 id="texto-pregunta"></h2>
+        <div id="contenedor-respuestas"></div>
+      </div>
+
+      <button id="boton-siguiente" class="boton-principal oculto">Siguiente</button>
+    </section>
+
+    
+    <section id="pantalla-resultado" class="pantalla oculto">
+      <h1>Quiz terminado</h1>
+      <p class="puntaje-final">
+        Tu puntaje final: <span id="puntaje-final"></span> de <span id="puntaje-maximo"></span>
+      </p>
+
+      <h2>Resumen de tus respuestas</h2>
+
+      <div id="lista-resultados"></div>
+
+      <button id="boton-reiniciar" class="boton-principal">Volver a intentar</button>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

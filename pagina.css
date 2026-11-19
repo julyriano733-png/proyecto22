@@ -1,0 +1,164 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #99e7fa;
+  color: #6a45f0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.contenedor {
+  background-color: rgb(128, 175, 245);
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Clase para esconder cosas. */
+.oculto {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #9408eb;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.descripcion {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.detalles {
+  margin: 0 0 25px 25px;
+  line-height: 1.8;
+}
+
+
+.boton-principal {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #b636c7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boton-principal:hover {
+  background-color: #e707e7;
+}
+
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.poco-tiempo {
+  color: #e53935;
+}
+
+.tarjeta {
+  background-color: #c2d5f1;
+  border: 1px solid #0168de;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#texto-pregunta {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.boton-respuesta {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: left;
+  background-color: rgb(227, 129, 251);
+  color: #333;
+  border: 2px solid #e702d7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.boton-respuesta:hover:not(:disabled) {
+  background-color: #e3f0ff;
+  border-color: #1976d2;
+}
+
+/* Cuando el botón está deshabilitado el navegador pone el texto gris*/
+.boton-respuesta:disabled {
+  cursor: default;
+  color: #333;
+}
+
+/* VERDE: la respuesta correcta. */
+.boton-respuesta.correcta {
+  background-color: #4caf50;
+  border-color: #388e3c;
+  color: white;
+}
+
+/* ROJO: la respuesta incorrecta */
+.boton-respuesta.incorrecta {
+  background-color: #e53935;
+  border-color: #c62828;
+  color: white;
+}
+
+
+.puntaje-final {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.item-resultado {
+  background-color: #f499fd;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 6px solid #e81717;
+}
+
+.item-resultado p {
+  margin-top: 4px;
+}
+
+.item-resultado.correcta {
+  border-left-color: #4caf50;
+}
+
+.item-resultado.incorrecta {
+  border-left-color: #e53935;
+}
+
+.item-resultado.sin-respuesta {
+  border-left-color: #ff9800;
+}
