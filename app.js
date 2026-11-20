@@ -1,5 +1,4 @@
-// ---------- 1. PREGUNTAS ----------
-// ---------- 1. PREGUNTAS ----------
+
 var preguntas = [
   {
     pregunta: "¿Qué es la mostacilla en la elaboración de manillas?",
