@@ -29,7 +29,7 @@ var preguntas = [
 ];
 
 
-// ---------- 2. VARIABLES DEL JUEGO ----------
+
 var TIEMPO = 60;          
 var numeroPregunta = 0;   // primer preg
 var puntaje = 0;        
@@ -37,7 +37,7 @@ var segundos = TIEMPO;    // time por preg
 var temporizador;         // reloj
 var resumen = "";         
 
-// ---------- 3. ELEMENTOS DEL HTML ----------
+
 var pantallaInicio = document.getElementById("pantalla-inicio");
 var pantallaQuiz = document.getElementById("pantalla-quiz");
 var pantallaResultado = document.getElementById("pantalla-resultado");
@@ -68,7 +68,7 @@ document.getElementById("boton-empezar").addEventListener("click", empezar);
 document.getElementById("boton-reiniciar").addEventListener("click", empezar);
 botonSiguiente.addEventListener("click", siguientePregunta);
 
-// ---------- 4. LÓGICA DEL QUIZ ----------
+
 function empezar() {
   clearInterval(temporizador); // por si había un reloj corriendo
 
